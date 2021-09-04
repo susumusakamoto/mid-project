@@ -2,6 +2,11 @@
 
 ![image](image/image1.jpeg)
 
+## Note
+I could not manage my time to spend enough time on the project. The overall 
+
+
+
 ## 1. Objective
 
 There are two objectives as following.
@@ -45,7 +50,21 @@ The map of price vs. location.
 
 To predict the price of 
 
-## 4. Results of model
+## 4. Results
+
+### * Understanding data
+
+I'd like to point out two characteristics of the data which I found out from the exploration process.
+
+1. The newer properties are not necessarily more expensive.
+There are properties built in early 1900s which are as expensive as those built in 2000s.
+
+2. The trend of most expensive district has been changing from 98004 to 98039 over a centry.
+![image4](image/3-2.maps.png)
+
+
+### * Prediction model
+
 
 ## 5. Conclusion and Future Analysis
 
