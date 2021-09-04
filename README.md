@@ -27,14 +27,25 @@ The data set consists of information on some 22,000 properties.  The dataset con
 - Sqft_living15: Living room area in 2015 (implies - some renovations). This might or might not have affected the lot size area.
 - Sqft_lot15: Lot size area in 2015 (implies - some renovations).
 
-![image2](image/image2.jpeg)
-
 ## 3. Steps
-### 2-1. Get the data to SQL Database
+### 3-1. Explore the data by SQL
 
-### 2-2. Explore the data and visualizing them by using Tableau
+Responding the questions which are presented in the instruction.
 
-### 2-3. Build a regression model
+### 3-2. Explore the data and visualizing them by Tableau
+
+THe graphs of price vs. feautures.
+![image3](image/1-1graphs.png)
 
 
-## 4. Results
+The map of price vs. location.
+![image4](image/3map.png)
+
+### 3-3. Build a regression model by Python
+
+To predict the price of 
+
+## 4. Results of model
+
+## 5. Conclusion and Future Analysis
+

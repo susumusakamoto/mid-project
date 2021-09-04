@@ -1,0 +1,2717 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0605.1023                               -->
+<workbook source-build='2021.2.0 (20212.21.0605.1023)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='regression_data1 (regression_data)' inline='true' name='federated.0gmt6be0tg9agu1705izr08zrbze' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='regression_data' name='excel-direct.09v9qm316puddi1c2g2q7190qne3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/susumusakamoto/ironhack/project/mid-project/data/regression_data.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.09v9qm316puddi1c2g2q7190qne3' name='regression_data2' table='[regression_data2$]' type='table'>
+          <columns gridOrigin='A1:U21597:no:A1:U21597:0' header='yes' outcome='6'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='integer' name='bedrooms' ordinal='2' />
+            <column datatype='real' name='bathrooms' ordinal='3' />
+            <column datatype='integer' name='sqft_living' ordinal='4' />
+            <column datatype='integer' name='sqft_lot' ordinal='5' />
+            <column datatype='real' name='floors' ordinal='6' />
+            <column datatype='integer' name='waterfront' ordinal='7' />
+            <column datatype='integer' name='view' ordinal='8' />
+            <column datatype='integer' name='condition' ordinal='9' />
+            <column datatype='integer' name='grade' ordinal='10' />
+            <column datatype='integer' name='sqft_above' ordinal='11' />
+            <column datatype='integer' name='sqft_basement' ordinal='12' />
+            <column datatype='integer' name='yr_built' ordinal='13' />
+            <column datatype='integer' name='yr_renovated' ordinal='14' />
+            <column datatype='integer' name='zipcode' ordinal='15' />
+            <column datatype='real' name='lat' ordinal='16' />
+            <column datatype='real' name='long' ordinal='17' />
+            <column datatype='integer' name='sqft_living15' ordinal='18' />
+            <column datatype='integer' name='sqft_lot15' ordinal='19' />
+            <column datatype='integer' name='price' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.09v9qm316puddi1c2g2q7190qne3' name='regression_data2' table='[regression_data2$]' type='table'>
+          <columns gridOrigin='A1:U21597:no:A1:U21597:0' header='yes' outcome='6'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='integer' name='bedrooms' ordinal='2' />
+            <column datatype='real' name='bathrooms' ordinal='3' />
+            <column datatype='integer' name='sqft_living' ordinal='4' />
+            <column datatype='integer' name='sqft_lot' ordinal='5' />
+            <column datatype='real' name='floors' ordinal='6' />
+            <column datatype='integer' name='waterfront' ordinal='7' />
+            <column datatype='integer' name='view' ordinal='8' />
+            <column datatype='integer' name='condition' ordinal='9' />
+            <column datatype='integer' name='grade' ordinal='10' />
+            <column datatype='integer' name='sqft_above' ordinal='11' />
+            <column datatype='integer' name='sqft_basement' ordinal='12' />
+            <column datatype='integer' name='yr_built' ordinal='13' />
+            <column datatype='integer' name='yr_renovated' ordinal='14' />
+            <column datatype='integer' name='zipcode' ordinal='15' />
+            <column datatype='real' name='lat' ordinal='16' />
+            <column datatype='real' name='long' ordinal='17' />
+            <column datatype='integer' name='sqft_living15' ordinal='18' />
+            <column datatype='integer' name='sqft_lot15' ordinal='19' />
+            <column datatype='integer' name='price' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U21597:no:A1:U21597:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bedrooms]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>bedrooms</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bathrooms]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>bathrooms</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_living</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_living]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>sqft_living</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_lot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_lot]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>sqft_lot</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[floors]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>floors</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waterfront</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[waterfront]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>waterfront</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[view]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>view</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[condition]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>condition</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_above</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_above]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>sqft_above</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_basement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_basement]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>sqft_basement</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr_built</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr_built]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>yr_built</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr_renovated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr_renovated]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>yr_renovated</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[long]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_living15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_living15]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>sqft_living15</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_lot15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_lot15]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>sqft_lot15</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[regression_data2]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regression!data2_3EB4C375CD7345BDB71835C096500569]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Price (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='5' formula='[price]' peg='0' size='169092' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='regression_data2' datatype='table' name='[__tableau_internal_object_id__].[regression!data2_3EB4C375CD7345BDB71835C096500569]' role='measure' type='quantitative' />
+      <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Condition' datatype='integer' name='[condition]' role='dimension' type='ordinal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Floors' datatype='real' name='[floors]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='integer' name='[grade]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Sqft Above' datatype='integer' name='[sqft_above]' role='measure' type='quantitative' />
+      <column caption='Sqft Basement' datatype='integer' name='[sqft_basement]' role='measure' type='quantitative' />
+      <column caption='Sqft Living15' datatype='integer' name='[sqft_living15]' role='measure' type='quantitative' />
+      <column caption='Sqft Living' datatype='integer' name='[sqft_living]' role='measure' type='quantitative' />
+      <column caption='Sqft Lot15' datatype='integer' name='[sqft_lot15]' role='measure' type='quantitative' />
+      <column caption='Sqft Lot' datatype='integer' name='[sqft_lot]' role='measure' type='quantitative' />
+      <column caption='View' datatype='integer' name='[view]' role='measure' type='quantitative' />
+      <column caption='Waterfront' datatype='integer' name='[waterfront]' role='measure' type='quantitative' />
+      <column caption='Yr Built' datatype='integer' name='[yr_built]' role='dimension' type='quantitative' />
+      <column caption='Yr Renovated' datatype='integer' name='[yr_renovated]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Price (bin)]' derivation='None' name='[none:Price (bin):qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Price (bin):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='regression_data2' id='regression!data2_3EB4C375CD7345BDB71835C096500569'>
+            <properties context=''>
+              <relation connection='excel-direct.09v9qm316puddi1c2g2q7190qne3' name='regression_data2' table='[regression_data2$]' type='table'>
+                <columns gridOrigin='A1:U21597:no:A1:U21597:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='integer' name='bedrooms' ordinal='2' />
+                  <column datatype='real' name='bathrooms' ordinal='3' />
+                  <column datatype='integer' name='sqft_living' ordinal='4' />
+                  <column datatype='integer' name='sqft_lot' ordinal='5' />
+                  <column datatype='real' name='floors' ordinal='6' />
+                  <column datatype='integer' name='waterfront' ordinal='7' />
+                  <column datatype='integer' name='view' ordinal='8' />
+                  <column datatype='integer' name='condition' ordinal='9' />
+                  <column datatype='integer' name='grade' ordinal='10' />
+                  <column datatype='integer' name='sqft_above' ordinal='11' />
+                  <column datatype='integer' name='sqft_basement' ordinal='12' />
+                  <column datatype='integer' name='yr_built' ordinal='13' />
+                  <column datatype='integer' name='yr_renovated' ordinal='14' />
+                  <column datatype='integer' name='zipcode' ordinal='15' />
+                  <column datatype='real' name='lat' ordinal='16' />
+                  <column datatype='real' name='long' ordinal='17' />
+                  <column datatype='integer' name='sqft_living15' ordinal='18' />
+                  <column datatype='integer' name='sqft_lot15' ordinal='19' />
+                  <column datatype='integer' name='price' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 17'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+            </column>
+            <column-instance column='[bathrooms]' derivation='Avg' name='[avg:bathrooms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[grade]' derivation='Avg' name='[avg:grade:qk]' pivot='key' type='quantitative' />
+            <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
+            <column caption='Grade' datatype='integer' name='[grade]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
+            <column caption='Yr Built' datatype='integer' name='[yr_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]'>
+            <groupfilter from='&quot;category_A&quot;' function='range' level='[none:Calculation_2156168703783682054:nk]' to='&quot;category_D&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:bathrooms:qk]' />
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:grade:qk]' />
+              <text column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{081C44D6-2013-41E4-8206-6928499DC8BA}' />
+    </worksheet>
+    <worksheet name='built_yr/bedrooms'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>average price of 3/4 bedrooms properties by built year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+            <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yr_built]' derivation='None' name='[none:yr_built:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Yr Built' datatype='integer' name='[yr_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:qk]' included-values='in-range'>
+            <min>3</min>
+            <max>4</max>
+          </filter>
+          <slices>
+            <column>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:yr_built:qk]</cols>
+      </table>
+      <simple-id uuid='{5E484EFE-8B29-4E17-9F1E-EAFCE5B77CFD}' />
+    </worksheet>
+    <worksheet name='count/bedroom'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>number of selling properties and its bedrooms</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:qk]</cols>
+      </table>
+      <simple-id uuid='{CD28AE24-E795-4AB1-82FC-D0D10AE18C4B}' />
+    </worksheet>
+    <worksheet name='count/yr_cat'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+            </column>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
+            <column caption='Yr Built' datatype='integer' name='[yr_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]'>
+            <groupfilter from='&quot;category_A&quot;' function='range' level='[none:Calculation_2156168703783682054:nk]' to='&quot;category_D&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]</cols>
+      </table>
+      <simple-id uuid='{0A431D73-8ACD-401D-A2AF-8631F1E79DA2}' />
+    </worksheet>
+    <worksheet name='price/basement'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Basement' datatype='integer' name='[sqft_basement]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_basement]' derivation='Sum' name='[sum:sqft_basement:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:id:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:price:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:sqft_basement:qk]</cols>
+      </table>
+      <simple-id uuid='{D89B5805-372E-42B2-B0A0-A4C4B173B6E3}' />
+    </worksheet>
+    <worksheet name='price/bathrooms'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[bathrooms]' derivation='None' name='[none:bathrooms:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='78' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk] + [federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk])</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bathrooms:ok]</cols>
+      </table>
+      <simple-id uuid='{A3DBB0BB-1D77-4908-9F23-C91C4E073AF5}' />
+    </worksheet>
+    <worksheet name='price/bedrooms'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>price/bedrooms</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='103' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk] + [federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk])</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:ok]</cols>
+      </table>
+      <simple-id uuid='{D5B5C36E-CFE3-4E77-90C3-CDF618F1C99C}' />
+    </worksheet>
+    <worksheet name='price/condition'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Condition' datatype='integer' name='[condition]' role='dimension' type='ordinal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[condition]' derivation='None' name='[none:condition:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='103' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk] + [federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk])</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:condition:ok]</cols>
+      </table>
+      <simple-id uuid='{D8419A89-5A51-4CFA-9C0B-740A0175B25F}' />
+    </worksheet>
+    <worksheet name='price/floor'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Floors' datatype='real' name='[floors]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[floors]' derivation='None' name='[none:floors:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='103' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk] + [federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk])</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:floors:ok]</cols>
+      </table>
+      <simple-id uuid='{95DEA56C-37F3-4B0A-B118-613E7E36107D}' />
+    </worksheet>
+    <worksheet name='price/grade'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Grade' datatype='integer' name='[grade]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='103' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk] + [federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk])</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:grade:ok]</cols>
+      </table>
+      <simple-id uuid='{EB0B5C1C-DA3F-4D5F-8783-7D8DAE3F20D7}' />
+    </worksheet>
+    <worksheet name='price/living15'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Living15' datatype='integer' name='[sqft_living15]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_living15]' derivation='Sum' name='[sum:sqft_living15:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:id:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:price:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:sqft_living15:qk]</cols>
+      </table>
+      <simple-id uuid='{42B0B8D4-AAE2-4BC0-B9FE-237154D7F9AC}' />
+    </worksheet>
+    <worksheet name='price/location'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>price/location</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[Longitude (generated)]' field-type='quantitative' max='-13437370.892766729' min='-13696175.157474464' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[Latitude (generated)]' field-type='quantitative' max='6084645.1734715682' min='5902713.4551535472' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]' num-steps='7' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:zipcode:ok]' />
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]' />
+              <geometry column='[federated.0gmt6be0tg9agu1705izr08zrbze].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[Latitude (generated)]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7017BCAF-4F58-4948-8BD6-F988D435747C}' />
+    </worksheet>
+    <worksheet name='price/lot15'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Lot15' datatype='integer' name='[sqft_lot15]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_lot15]' derivation='Sum' name='[sum:sqft_lot15:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:id:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:price:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:sqft_lot15:qk]</cols>
+      </table>
+      <simple-id uuid='{B4CCE16E-D9C1-499F-BC55-03624A6A7FD3}' />
+    </worksheet>
+    <worksheet name='price/sqftabove'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sqft Above' datatype='integer' name='[sqft_above]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_above]' derivation='Sum' name='[sum:sqft_above:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:id:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:price:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[sum:sqft_above:qk]</cols>
+      </table>
+      <simple-id uuid='{1101AED3-D4A4-4D85-9A0E-6B37D804A51D}' />
+    </worksheet>
+    <worksheet name='price/view'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[view]' derivation='None' name='[none:view:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='View' datatype='integer' name='[view]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='103' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk] + [federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk])</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:view:ok]</cols>
+      </table>
+      <simple-id uuid='{BC702EE6-BF32-4922-9624-D6FAFADEE903}' />
+    </worksheet>
+    <worksheet name='price/waterfront'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[waterfront]' derivation='None' name='[none:waterfront:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Waterfront' datatype='integer' name='[waterfront]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='103' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk] + [federated.0gmt6be0tg9agu1705izr08zrbze].[cnt:id:qk])</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:waterfront:ok]</cols>
+      </table>
+      <simple-id uuid='{3AD232C0-8EAE-481C-A057-546AEED18E1C}' />
+    </worksheet>
+    <worksheet name='price/yr_cat'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+            <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+            </column>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Yr Built' datatype='integer' name='[yr_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]'>
+            <groupfilter from='&quot;category_A&quot;' function='range' level='[none:Calculation_2156168703783682054:nk]' to='&quot;category_D&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]</rows>
+        <cols>[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]</cols>
+      </table>
+      <simple-id uuid='{57D9FAC0-416A-4E8F-A24F-EA8B919FF432}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='1.graphs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>1-1. Price vs. other features</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='48958' id='16' param='vert' type-v2='layout-flow' w='87628' x='586' y='1042'>
+            <zone h='5469' id='17' type-v2='title' w='87628' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='43489' id='7' param='horz' type-v2='layout-flow' w='87628' x='586' y='6511'>
+              <zone h='43489' id='5' type-v2='layout-basic' w='87628' x='586' y='6511'>
+                <zone h='43489' id='3' name='price/bedrooms' w='43997' x='586' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='40917' id='9' name='price/bathrooms' w='43631' x='44583' y='9083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='48958' id='10' name='price/condition' w='43997' x='586' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='48958' id='12' name='price/grade' w='43631' x='44583' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='117' h='97916' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11200' x='88214' y='1042'>
+            <zone h='8594' id='8' name='price/bedrooms' pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type-v2='color' w='11200' x='88214' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>1.graphs</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2200' minheight='2200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='20' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5469' id='17' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92447' id='3' is-fixed='true' name='price/bedrooms' w='22564' x='586' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8594' id='8' name='price/bedrooms' pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type-v2='color' w='8565' x='90849' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46222' id='9' is-fixed='true' name='price/bathrooms' w='22567' x='23150' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46222' id='10' is-fixed='true' name='price/condition' w='22565' x='45717' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46222' id='12' is-fixed='true' name='price/grade' w='22567' x='68282' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FA8A1E21-6525-42B6-85AE-40EE9FD5873A}' />
+    </dashboard>
+    <dashboard name='1.graphs (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>1-1. Price vs. other features</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='16' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone fixed-size='218' h='29427' id='17' is-fixed='true' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='68489' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='30469'>
+              <zone h='68489' id='5' type-v2='layout-basic' w='98828' x='586' y='30469'>
+                <zone h='68489' id='11' name='price/floor' w='37042' x='31479' y='30469'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='68489' id='13' name='price/view' w='30893' x='586' y='30469'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='68489' id='14' name='price/waterfront' w='30893' x='68521' y='30469'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>1.graphs</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2200' minheight='2200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='20' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5469' id='17' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46225' id='13' is-fixed='true' name='price/view' w='22567' x='23150' y='52733'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46225' id='11' is-fixed='true' name='price/floor' w='22564' x='45717' y='52733'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46225' id='14' is-fixed='true' name='price/waterfront' w='22568' x='68281' y='52733'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{86EAEE72-A596-4B16-B829-5F306E7C2EE1}' />
+    </dashboard>
+    <dashboard name='2.scatter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>2. Price vs. Size</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='10' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='5469' id='11' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92447' id='8' type-v2='layout-basic' w='98828' x='586' y='6511'>
+              <zone h='46223' id='3' name='price/sqftabove' w='49414' x='586' y='6511'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46223' id='5' name='price/basement' w='49414' x='50000' y='6511'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46224' id='6' name='price/living15' w='49414' x='586' y='52734'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46224' id='7' name='price/lot15' w='49414' x='50000' y='52734'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='14' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5469' id='11' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46223' id='3' is-fixed='true' name='price/sqftabove' w='49414' x='586' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46223' id='5' is-fixed='true' name='price/basement' w='49414' x='50000' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46224' id='6' is-fixed='true' name='price/living15' w='49414' x='586' y='52734'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46224' id='7' is-fixed='true' name='price/lot15' w='49414' x='50000' y='52734'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{55AFB614-1155-4E91-9B2F-7D53393A8DF6}' />
+    </dashboard>
+    <dashboard name='3.map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>3. Price vs. Location</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='12' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='5469' id='13' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92447' id='10' param='vert' type-v2='layout-flow' w='98828' x='586' y='6511'>
+              <zone h='92447' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='6511'>
+                <zone h='92447' id='5' type-v2='layout-basic' w='87115' x='586' y='6511'>
+                  <zone h='92447' id='3' name='price/location' w='87115' x='586' y='6511'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='160' h='92447' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='6511'>
+                  <zone h='8464' id='8' name='price/location' pane-specification-id='2' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]' type-v2='color' w='11713' x='87701' y='6511'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='16' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='5469' id='13' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92447' id='3' is-fixed='true' name='price/location' w='87115' x='586' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='8' name='price/location' pane-specification-id='2' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]' type-v2='color' w='11713' x='87701' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6FA90171-AA74-4DAC-9462-B6BD5A461DDC}' />
+    </dashboard>
+    <dashboard name='4.bedrooms/builtyear'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>4. Focusing on properties with 3 or 4 bedrooms</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='regression_data1 (regression_data)' name='federated.0gmt6be0tg9agu1705izr08zrbze' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
+        <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+        </column>
+        <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='19' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='5469' id='20' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92447' id='10' param='horz' type-v2='layout-flow' w='98828' x='586' y='6511'>
+              <zone h='92447' id='8' type-v2='layout-basic' w='87115' x='586' y='6511'>
+                <zone h='46223' id='3' name='count/bedroom' w='43558' x='586' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46223' id='7' name='built_yr/bedrooms' w='43557' x='44144' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46224' id='12' name='price/yr_cat' w='43559' x='44142' y='52734'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46224' id='14' name='count/yr_cat' w='43556' x='586' y='52734'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='92447' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='6511'>
+                <zone h='8594' id='11' name='built_yr/bedrooms' pane-specification-id='2' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:ok]' type-v2='color' w='11713' x='87701' y='6511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='13' name='price/yr_cat' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]' type-v2='filter' w='11713' x='87701' y='15105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='15' name='count/yr_cat' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]' type-v2='filter' w='11713' x='87701' y='34116'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='16' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='280' h='48958' id='3' is-fixed='true' name='count/bedroom' w='43558' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='7' is-fixed='true' name='built_yr/bedrooms' w='43557' x='44144' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8594' id='11' name='built_yr/bedrooms' pane-specification-id='2' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:ok]' type-v2='color' w='11713' x='87701' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='15' mode='checkdropdown' name='count/yr_cat' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]' type-v2='filter' w='11713' x='87701' y='28647'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='14' is-fixed='true' name='count/yr_cat' w='43557' x='586' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19011' id='13' mode='checkdropdown' name='price/yr_cat' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]' type-v2='filter' w='11713' x='87701' y='9636'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48958' id='12' is-fixed='true' name='price/yr_cat' w='43558' x='44143' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{48A5ED63-997F-4B26-9126-F0536E3D7757}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='1.graphs' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='price/bathrooms'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/bedrooms'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/condition'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/grade'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{01F4F2B6-4494-4137-A21E-A4FFC1776C70}' />
+    </window>
+    <window class='dashboard' name='1.graphs (2)' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='price/floor'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/view'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/waterfront'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3CF9268B-F9EA-4503-A843-250AC0E35ADA}' />
+    </window>
+    <window class='dashboard' maximized='true' name='2.scatter' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='price/basement'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/living15'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/lot15'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/sqftabove'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{A529D720-5A9D-444C-9A34-BA6DE3E05A8A}' />
+    </window>
+    <window class='dashboard' name='3.map' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='price/location'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5FF4E1CA-25A7-4766-8B87-07496116B32A}' />
+    </window>
+    <window class='dashboard' name='4.bedrooms/builtyear' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='built_yr/bedrooms'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='count/bedroom'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='count/yr_cat'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='price/yr_cat'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E675A5F4-3E99-45E0-A54A-BDDF10234C76}' />
+    </window>
+    <window class='worksheet' name='price/bedrooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='40'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7C7FDB10-425C-4987-8BD1-D55762C5D034}' />
+    </window>
+    <window class='worksheet' name='price/bathrooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE57B26C-6DED-4223-9723-A1AAF161A6E9}' />
+    </window>
+    <window class='worksheet' name='price/condition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37D42A54-5EF1-4A8E-BD1F-3431AE0C5201}' />
+    </window>
+    <window class='worksheet' name='price/floor'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B6105791-CE9E-4ACD-93EB-BDE3A4DE6B9A}' />
+    </window>
+    <window class='worksheet' name='price/grade'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F812DF6-FDFE-4343-B074-D6E202C77D1A}' />
+    </window>
+    <window class='worksheet' name='price/view'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F340E492-7C4D-4567-9E64-0D7C1F17CA92}' />
+    </window>
+    <window class='worksheet' name='price/waterfront'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC7BC475-BF63-4412-9E67-204509E89647}' />
+    </window>
+    <window class='worksheet' name='price/sqftabove'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{162DE0FA-B966-434C-86F6-0AC169D9952D}' />
+    </window>
+    <window class='worksheet' name='price/basement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEC3AC2B-B29C-46E6-88E1-C24012C1BD00}' />
+    </window>
+    <window class='worksheet' name='price/living15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{63418178-2D88-4DB5-8231-C54B80379C14}' />
+    </window>
+    <window class='worksheet' name='price/lot15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE1B1FD3-B776-4925-8EB3-B73BF41312C2}' />
+    </window>
+    <window class='worksheet' name='price/location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F04DA216-0237-4451-86EC-64EB5A8334EE}' />
+    </window>
+    <window class='worksheet' name='count/bedroom'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6F3BE31D-84AD-49BE-A622-83833A9C37DD}' />
+    </window>
+    <window class='worksheet' name='built_yr/bedrooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:bedrooms:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD6D0EAE-1078-4565-A011-1555FF789FA9}' />
+    </window>
+    <window class='worksheet' name='price/yr_cat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1052EB2D-EC40-467A-9F7E-A286E1C0B9FC}' />
+    </window>
+    <window class='worksheet' name='count/yr_cat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0gmt6be0tg9agu1705izr08zrbze].[none:Calculation_2156168703783682054:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E13E72BA-4B16-41A8-B53F-B8384B80195C}' />
+    </window>
+    <window class='worksheet' name='Sheet 17'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:grade:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D337012A-6F02-4935-A860-DB6229AA160E}' />
+    </window>
+  </windows>
+</workbook>
