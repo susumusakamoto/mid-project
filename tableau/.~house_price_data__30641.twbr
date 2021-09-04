@@ -422,6 +422,12 @@
       <aliases enabled='yes' />
       <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
         <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+        <aliases>
+          <alias key='&quot;category_A&quot;' value='1900-1930' />
+          <alias key='&quot;category_B&quot;' value='1930-1960' />
+          <alias key='&quot;category_C&quot;' value='1960-1990' />
+          <alias key='&quot;category_D&quot;' value='1990-2015' />
+        </aliases>
       </column>
       <column aggregation='None' datatype='integer' name='[Price (bin)]' role='dimension' type='quantitative'>
         <calculation class='bin' decimals='5' formula='[price]' peg='0' size='169092' />
@@ -521,6 +527,12 @@
           <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
             <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
               <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+              <aliases>
+                <alias key='&quot;category_A&quot;' value='1900-1930' />
+                <alias key='&quot;category_B&quot;' value='1930-1960' />
+                <alias key='&quot;category_C&quot;' value='1960-1990' />
+                <alias key='&quot;category_D&quot;' value='1990-2015' />
+              </aliases>
             </column>
             <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
             <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
@@ -666,6 +678,12 @@
           <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
             <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
               <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+              <aliases>
+                <alias key='&quot;category_A&quot;' value='1900-1930' />
+                <alias key='&quot;category_B&quot;' value='1930-1960' />
+                <alias key='&quot;category_C&quot;' value='1960-1990' />
+                <alias key='&quot;category_D&quot;' value='1990-2015' />
+              </aliases>
             </column>
             <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
             <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
@@ -1243,6 +1261,12 @@
           <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
             <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
               <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+              <aliases>
+                <alias key='&quot;category_A&quot;' value='1900-1930' />
+                <alias key='&quot;category_B&quot;' value='1930-1960' />
+                <alias key='&quot;category_C&quot;' value='1960-1990' />
+                <alias key='&quot;category_D&quot;' value='1990-2015' />
+              </aliases>
             </column>
             <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
@@ -1267,8 +1291,39 @@
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.0gmt6be0tg9agu1705izr08zrbze].[avg:price:qk]' num-steps='7' type='interpolated' />
           </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
           <style-rule element='map'>
-            <format attr='washout' value='0.0' />
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
           </style-rule>
         </style>
         <panes>
@@ -1532,6 +1587,12 @@
           <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
             <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
               <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+              <aliases>
+                <alias key='&quot;category_A&quot;' value='1900-1930' />
+                <alias key='&quot;category_B&quot;' value='1930-1960' />
+                <alias key='&quot;category_C&quot;' value='1960-1990' />
+                <alias key='&quot;category_D&quot;' value='1990-2015' />
+              </aliases>
             </column>
             <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
@@ -2141,6 +2202,12 @@
       <datasource-dependencies datasource='federated.0gmt6be0tg9agu1705izr08zrbze'>
         <column caption='year_built_bins' datatype='string' name='[Calculation_2156168703783682054]' role='dimension' type='nominal'>
           <calculation class='tableau' formula='IF [yr_built] &gt;= 1900 AND [yr_built] &lt; 1930 THEN &apos;category_A&apos;&#10;ELSEIF [yr_built] &gt;= 1930 AND [yr_built] &lt; 1960 THEN &apos;category_B&apos;&#10;ELSEIF [yr_built] &gt;= 1960 AND [yr_built] &lt; 1990 THEN &apos;category_C&apos;&#10;ELSEIF [yr_built] &gt;= 1990 AND [yr_built] &lt; 2015 THEN &apos;category_D&apos; END' />
+          <aliases>
+            <alias key='&quot;category_A&quot;' value='1900-1930' />
+            <alias key='&quot;category_B&quot;' value='1930-1960' />
+            <alias key='&quot;category_C&quot;' value='1960-1990' />
+            <alias key='&quot;category_D&quot;' value='1990-2015' />
+          </aliases>
         </column>
         <column-instance column='[Calculation_2156168703783682054]' derivation='None' name='[none:Calculation_2156168703783682054:nk]' pivot='key' type='nominal' />
       </datasource-dependencies>
@@ -2370,14 +2437,14 @@
       <active id='-1' />
       <simple-id uuid='{5FF4E1CA-25A7-4766-8B87-07496116B32A}' />
     </window>
-    <window class='dashboard' maximized='true' name='3-2.maps' tab-color='#f66273'>
+    <window class='dashboard' name='3-2.maps' tab-color='#f66273'>
       <viewpoints>
         <viewpoint name='price/location (2)'>
           <zoom type='entire-view' />
           <default-map-tool-selection tool='1' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='6' />
       <simple-id uuid='{831064D3-5FC0-4022-BB6A-80F94E813750}' />
     </window>
     <window class='dashboard' name='4.bedrooms/builtyear' tab-color='#f66273'>
@@ -2714,7 +2781,7 @@
       </cards>
       <simple-id uuid='{F04DA216-0237-4451-86EC-64EB5A8334EE}' />
     </window>
-    <window class='worksheet' name='price/location (2)'>
+    <window class='worksheet' maximized='true' name='price/location (2)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
