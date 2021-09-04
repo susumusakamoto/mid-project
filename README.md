@@ -64,7 +64,7 @@ There are properties built in early 1900s which are as expensive as those built 
 
 
 ### * Prediction model
-
+I am still working on building models...
 
 ## 5. Conclusion and Future Analysis
 
