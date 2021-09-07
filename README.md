@@ -2,11 +2,6 @@
 
 ![image](image/image1.jpeg)
 
-## Note
-I could not manage my time to spend enough time on the project. The overall 
-
-
-
 ## 1. Objective
 
 There are two objectives as following.
@@ -39,11 +34,9 @@ Responding the questions which are presented in the instruction.
 
 ### 3-2. Explore the data and visualizing them by Tableau
 
-THe graphs of price vs. feautures.
 ![image3](image/1-1graphs.png)
 
 
-The map of price vs. location.
 ![image4](image/3map.png)
 
 ### 3-3. Build a regression model by Python
@@ -63,8 +56,7 @@ There are properties built in early 1900s which are as expensive as those built 
 ![image4](image/3-2.maps.png)
 
 
-### * Prediction model
-I am still working on building models...
+### Prediction model
+In fact, the further processing is needed... But I will hand it in anyways because my work got crazily busy in these few weeks and I don't konw when I will have time to finish this project. I will try to finish it in coming days.
 
-## 5. Conclusion and Future Analysis
 
